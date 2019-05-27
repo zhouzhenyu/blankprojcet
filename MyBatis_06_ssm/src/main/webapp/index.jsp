@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-    <a href="">查询所有员工</a>
+    <a href="getemps">查询所有员工</a>
 </body>
 </html>

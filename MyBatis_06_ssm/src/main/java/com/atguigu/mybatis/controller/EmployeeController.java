@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -22,9 +23,11 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @RequestMapping("/getemps")
-    public String emps(Map<String, Object> map){
+    public String emps(Map<String, Object> map, HttpServletRequest request){
         List<Employee> emps = employeeService.getEmps();
         map.put("allEmps", emps);
-        return "list";
+        request.setAttribute("allEmpsfuck", emps);
+//        return "list";
+        return "fuckyou";
     }
 }
