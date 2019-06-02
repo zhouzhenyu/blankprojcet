@@ -19,19 +19,19 @@
             targetProject="\MBGTestProject\src";目标工程
         -->
         <javaModelGenerator targetPackage="com.atguigu.mybatis.bean"
-                            targetProject=".\src">
+                            targetProject="./src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="com.atguigu.mybatis.dao"
-                         targetProject=".\src">
+                         targetProject="./src/main/java">
             <property name="enableSubPackage" value="true" />
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.atguigu.mybatis.dao"
-                             targetProject=".\src" >
+                             targetProject="./src/main/java" >
             <property name="enableSubPackage" value="true" />
         </javaClientGenerator>
 
